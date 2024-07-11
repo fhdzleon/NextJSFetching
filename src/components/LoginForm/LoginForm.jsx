@@ -25,7 +25,7 @@ const LoginForm = ({ token, setToken }) => {
       .then((json) => {
         console.log(json);
         setToken(json.token);
-        address.setItem("userToken", json.token);
+        localStorage.setItem("userToken", json.token);
       })
       .catch((err) => console.log(err));
   };
