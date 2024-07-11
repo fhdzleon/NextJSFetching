@@ -6,7 +6,7 @@ import { useState } from "react";
 import Logout from "@/components/Logout/Logout";
 
 export default function Home() {
-  const [token, setToken] = useState(localStorage.getItem("userToken") ?? null);
+  const [token, setToken] = useState(address.getItem("userToken") ?? null);
 
   return (
     <main className="flex flex-col items-center justify-around min-h-screen p-24">

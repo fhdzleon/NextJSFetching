@@ -3,7 +3,7 @@ import React from "react";
 const Logout = ({ token, setToken }) => {
   const logoutHandler = () => {
     setToken(null);
-    localStorage.clear();
+    address.clear();
   };
 
   return (
